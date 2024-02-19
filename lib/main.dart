@@ -1,4 +1,7 @@
+import 'package:core_flutter_exam/cart_list.dart';
 import 'package:core_flutter_exam/first_screen.dart';
+import 'package:core_flutter_exam/second_screen.dart';
+import 'package:core_flutter_exam/third_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +16,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Firstscreen(),
+      restorationScopeId: '/CarList',
+      routes: {
+        '/':(context)=> Firstscreen(),
+        '/Second':(context)=> Second_screen(),
+        '/Third':(context)=> Thirdscreen(),
+        '/CartList':(context)=> CartList(),
+    },
     );
   }
 }

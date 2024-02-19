@@ -18,7 +18,11 @@ class _FirstscreenState extends State<Firstscreen> {
               SizedBox(width: 20,),
               Image.asset('asset/image/logo.png'),
               SizedBox(width: 450,),
-              Text('New arrivals'),
+              GestureDetector(
+                  onTap:(){
+                    Navigator.pushReplacementNamed(context, '/Second');
+                  },
+                  child: Text('New arrivals')),
               SizedBox(width: 20,),
               Text('men'),
               SizedBox(width: 20,),
@@ -41,7 +45,7 @@ class _FirstscreenState extends State<Firstscreen> {
             Container(
               height: 600,
               width: double.infinity,
-              color: Colors.white,
+              color: Color(0xfff5f5f5),
               child: Row(
                 children: [
                   Column(
