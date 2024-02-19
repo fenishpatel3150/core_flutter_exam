@@ -283,7 +283,7 @@ Widget product(index){
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 10),
-                      child: Text(productimage[index]['price'],style: TextStyle(fontWeight: FontWeight.normal,fontSize: 8),),
+                      child: Text('${productimage[index]['price']}',style: TextStyle(fontWeight: FontWeight.normal,fontSize: 8),),
                     ),
                   ],
                 ),
@@ -327,7 +327,7 @@ Widget product2(index){
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 10),
-                      child: Text(productimage[index]['price'],style: TextStyle(fontWeight: FontWeight.normal,fontSize: 8),),
+                      child: Text('${productimage[index]['price']}',style: TextStyle(fontWeight: FontWeight.normal,fontSize: 8),),
                     ),
                   ],
                 ),
@@ -371,7 +371,7 @@ Widget product3(index){
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 10),
-                      child: Text(productimage[index]['price'],style: TextStyle(fontWeight: FontWeight.normal,fontSize: 8),),
+                      child: Text('${productimage[index]['price']}',style: TextStyle(fontWeight: FontWeight.normal,fontSize: 8),),
                     ),
                   ],
                 ),
